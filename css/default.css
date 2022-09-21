@@ -1,0 +1,32 @@
+/* 모바일용 CSS*/
+
+/* 기본 CSS*/
+.container{
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+
+}
+/*헤더 고정*/
+.cfixed:after { 
+    display: block;
+    content: "";
+    clear: both; /* float속성에서 발생할 문제를 위해 사용*/
+}
+
+
+/* 모바일 - 슬라이더 영역 CSS */
+
+
+/* 태블릿용 CSS*/
+/* 태블릿 - 슬라이더 영역 CSS */
+@media all and (min-width: 768px){
+
+}
+
+/* PC용 CSS*/
+@media all and (min-width: 960px){
+
+}
+
+/* PC - 슬라이더 영역 CSS */
