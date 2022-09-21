@@ -1,12 +1,12 @@
 /* 모바일용 CSS*/
 
 /* 기본 CSS*/
-.container{
+.container {
     width: 90%;
     max-width: 1132px;
     margin: 0 auto;
-
 }
+
 /*헤더 고정*/
 .cfixed:after { 
     display: block;
@@ -14,6 +14,19 @@
     clear: both; /* float속성에서 발생할 문제를 위해 사용*/
 }
 
+.sec-tit{
+    font-size: 2.625em;
+    color: #93B5C6;
+    font-weight: normal;
+}
+
+.divider{
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+    margin-top: 77px;
+    background-color: #C9CCD5;
+}
 
 /* 모바일 - 슬라이더 영역 CSS */
 
@@ -21,6 +34,9 @@
 /* 태블릿용 CSS*/
 /* 태블릿 - 슬라이더 영역 CSS */
 @media all and (min-width: 768px){
+    .divider{
+        margin-top: 124px;
+    }
 
 }
 
