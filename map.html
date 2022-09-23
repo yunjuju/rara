@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3b6d85e9a6b8cee22938d60cc94b5d9b"></script>
+    <title>카카오지도 연습</title>
+</head>
+<body>
+    <div id="map" style="width: 500px; height: 400px;"></div>
+    <div id="map2" style="width: 500px; height: 400px;"></div>
+    <div id="map3" style="width: 500px; height: 400px;"></div>
+    <div id="roadview" style="width: 500px; height: 400px;"></div>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center : new kakao.maps.LatLng(37.58421, 127.0019),
+            level :3
+        };
+        var map = new kakao.maps.Map(container,options);
+
+
+
+        var container2 = document.getElementById('map2');
+        var options2 = {
+            center : new kakao.maps.LatLng(37.58421, 127.0019),
+            level :3
+        };
+        var map2 = new kakao.maps.Map(container2,options2);
+        var marker2 = new kakao.maps.Marker({
+            position : new kakao.maps.LatLng(37.58421, 127.0019)
+        });
+        marker2.setMap(map2)
+        
+
+        var container3 = document.getElementById('map3');
+        var options3 = {
+            center : new kakao.maps.LatLng(37.58421, 127.0019),
+            level :3
+        };
+        var map3 = new kakao.maps.Map(container3,options3);
+        var infoWindow3 = new kakao.maps.InfoWindow({
+            map: map3,
+            position: new kakao.maps.LatLng(37.58421, 127.0019),
+            content: "<div style='padding: 5px;'>SBS아카데미</div>"
+        });
+
+        var roadviewContainer = document.getElementById('roadview');
+        var roadview = new kakao.maps.Roadview(roadviewContainer);
+        var roadviewClient = new kakao.maps.RoadviewClient();
+        var roadviewPos = new kakao.maps.LatLng(37.58421, 127.0019);
+
+        roadviewClient.getNearestPanoId(roadviewPos, 50, function(panoId)
+        {
+            roadview.setPanoId(panoId, roadviewPos);
+        })
+    </script>
+    <!--content: "<div style= padding: 5px;'> 혜화 </div>"
+            removable: false-->
+</body>
+</html>
