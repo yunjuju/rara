@@ -4,6 +4,7 @@
     --main-1: #F999B7;
     --c-color: #C9CCD5;
     --c-font: 'Prompt';
+    --main-2:#C9CCD5;
 }
 
 
@@ -36,14 +37,14 @@
     max-width: 1132px;
     margin: 0 auto;
     margin-top: 77px;
-    background-color: #C9CCD5;
+    background-color: var(--main-2);
 }
 
 .m-divider{
     width: 20px;
     margin: 0 auto;
     margin-top: 77px;
-    background-color: #C9CCD5;
+    background-color: var(--main-2);
 }
 
 .blind{
@@ -174,7 +175,7 @@
         height: 100%;
     }
 
-    .work-section .work-list li a::before{
+    .work-section .work-list li a:before{
         display: block;
         content: ""; /*before after는 content 속성이 있어야함*/
         
@@ -193,7 +194,7 @@
         z-index: 10;
     }
 
-    .work-section .work-list li a:hover::before{
+    .work-section .work-list li a:hover:before{
         opacity: 0.8;
     }
 
@@ -229,6 +230,47 @@
          max-width: 100%;
          height: auto;
     }
+
+/* 모바일 - 최근 글 영역 CSS */
+
+    .blog-section{
+        margin-top: 77px;
+    }
+
+    .blog-section .sec-tit{
+        margin-bottom: 47px;
+        text-align: center;
+    }
+
+    .blog-section .blog-list li{
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .blog-section .blog-list li:first-child{
+        margin-top: 0;
+    }
+
+    .blog-section .blog-list li img{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .blog-section .blog-list li time{
+        display: block;
+        margin: 11px 0 10px 0;
+        font-size: 0.875em;
+        color: #C9CCD5;
+    }
+
+    .blog-section .blog-list li h3{
+        color: #424242;
+        font-weight: normal;
+        line-height: 1.6;
+    }
+
 
 /* 태블릿용 CSS*/
 
@@ -272,7 +314,7 @@
     .display-section{
         margin-top: 95px;
     }
-}
+
 
 /* 태블릿 - 프로모션 영역 CSS */
     .promotion-section {
@@ -280,9 +322,9 @@
     }
 
     .promotion-section .promo-list li{
+        float: left;
         width: 23.04688%;
         margin-left: 2.60416%;
-        float: left;
         margin-top: 0;
     }
 
@@ -291,27 +333,48 @@
     }
 
 /* 태블릿 - 최근 작업 영역 CSS */
-    .work-section{
+    .work-section {
         margin-top: 118px;
     }
 
-    .work-section .sec-tit{
+    .work-section .sec-tit {
         margin-bottom: 76px;
     }
 
-    .work-section .work-list li{
+    .work-section .work-list li {
         float: left;
         width: 50%;
     }
 
-    .work-section .work-list li .info{
+    .work-section .work-list li .info {
         left: 37px;
     }
 
-    .work-section .work-list li a:hover .info{
+    .work-section .work-list li a:hover .info {
         transform: translateY(37px);
     }
 
+/* 태블릿 - 최근 글 영역 CSS */
+    .blog-section{
+        margin-top: 124px;
+    }
+
+    .blog-section .sec-tit{
+        margin-bottom: 76px;
+    }
+
+    .blog-section .blog-list li{
+        float: left;
+        width: 31.59722%;
+        margin-left: 2.60417%;
+        margin-top: 0;
+    }
+
+    .blog-section .blog-list li:first-child{
+        margin-left: 0;
+    }
+
+}
 /* PC용 CSS*/
 @media all and (min-width: 960px){
 
@@ -351,3 +414,24 @@
     .work-section .work-list li {
         width: 25%;
     }
+
+/* PC - 최근 글 영역 CSS */
+    .blog-section .sec-tit{
+        text-align: left;
+        float: left;
+        width: 25%;
+    }
+
+    .blog-section .blog-list{
+        float: right;
+        width: 75%;
+    }
+
+    .blog-section .blog-list li{
+        width: 31.27572%;
+        margin-left: 3.08642%;
+    }
+    .blog-section .blog-list li:first-child{
+        margin-left: 0;
+    }
+}
