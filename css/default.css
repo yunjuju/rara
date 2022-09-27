@@ -342,6 +342,7 @@
         padding:  28px 52px;
     }
     .header .gnb{
+        display: block;
         position: static;
         float: right;
         width: auto; /* float: right 하려면 width를 auto로 줘야함*/
