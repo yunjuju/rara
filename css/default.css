@@ -4,7 +4,10 @@
     --main-1: #F999B7;
     --c-color: #C9CCD5;
     --c-font: 'Prompt';
+    --c-font2:'KOTRAHOPE';
+    --c-font3:'IM_Hyemin-Bold';
     --main-2:#C9CCD5;
+
 }
 
 
@@ -150,7 +153,7 @@
 
     .promotion-section .promo-list li p{
         font-size: 0.875em;
-        font-family: var(--c-font);
+        font-family: var(--c-font2);
         color: var(--c-color);
         line-height: 1.5;
     }
@@ -163,6 +166,10 @@
     .work-section .sec-tit{
         text-align: center;
         margin-bottom: 47px;
+    }
+
+    .work-section .work-list li a span{
+        font-family:'KOTRAHOPE';
     }
     
     .work-section .work-list li{
@@ -267,9 +274,11 @@
     }
 
     .blog-section .blog-list li h3{
-        color: #424242;
+        color: #C9CCD5;
         font-weight: normal;
         line-height: 1.6;
+        font-family: 'KOTRAHOPE';
+
     }
 /* 모바일- 연락처 영역 CSS */
     .contact-section{
@@ -507,7 +516,7 @@
         top: 9px;
         left: 0;
         width: 2px;
-        height: 44px;
+        height: 17px;
         background-color: var(--c-color);
         content: "";
 

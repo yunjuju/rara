@@ -1,8 +1,22 @@
 @charset "utf-8" ;
 
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat&family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* 브라우저별로 설정되어있는 기본 CSS 내용을 초기화 */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption , tbody, tfoot, thead, tr, td, th, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
