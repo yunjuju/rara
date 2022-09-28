@@ -54,7 +54,7 @@ body{
         padding: 0;
         border: 0;
         border-bottom:  1px solid #757575;
-        color: #3f71b5;
+        color: #F2789F;
         font-family: 'montserrat';
         font-size: 12px;
         vertical-align: top;
@@ -65,5 +65,5 @@ body{
     /* 크롬, 사파리 */
     ::-webkit-input-placeholder,
     ::-webkit-textarea-placeholder{
-        color: #3f71b5;
+        color: #F2789F;
     }

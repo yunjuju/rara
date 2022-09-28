@@ -313,9 +313,20 @@
     .footer{
         margin-top: 104px;
     }
-    .footer iframe{
+    .footer .map-section{
         width: 100%;
-        height: 320px;
+        height: 660px;
+    }
+
+    .footer .map-section #map1,
+    .footer .map-section #map2{
+        width: 100%;
+        height: 320px
+        
+    }
+
+    .footer .map-section #map2{
+        margin-top: 20px;
     }
 
     .footer p{
@@ -323,6 +334,8 @@
         text-align: center;
         color: var(--main);
     }
+
+    
 
 
 /* 태블릿용 CSS*/
@@ -451,8 +464,20 @@
         margin-bottom: 0;
     }
 /* 태블릿 - footer 영역 CSS */
-    .footer iframe{
+    .footer .map-section{
+        width: 100%;
         height: 450px;
+    }
+
+    .footer .map-section #map1,
+    .footer .map-section #map2{
+        width: 48.69792%;
+        height: 450px;
+        float: left;
+        margin: 0;
+    }
+    .footer .map-section #map1{
+        margin-right:2.60416% ;
     }
 
     .footer p{
@@ -540,5 +565,15 @@
         margin-left: 3.30688%;
     }
 
+/* PC - footer 영역 CSS */
+
+    .footer .map-section #map1,
+    .footer .map-section #map2{
+        width: 48.95833%;
+    }
+
+    .footer .map-section #map1{
+        margin-right: 2.08334%;
+    }
 
 }
