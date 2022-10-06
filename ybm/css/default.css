@@ -279,25 +279,148 @@
     order: 4;
     display: flex;
     height: 466px;
-    background-color: hotpink;
+}
+
+.plan form h3{
+    font-size: 17px;
+    padding: 15px 15px 30px 15px;
+}
+
+.plan form .plan-form{
+    padding: 0 10px 10px 10px;
+}
+
+.plan-form li label{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 5px;
+    letter-spacing: -1px;
+}
+
+.plan-form li{
+    padding-bottom: 6px;
+    height: 34px;
+}
+
+.plan-form li select{
+    height: 100%;
+    background: transparent;
+    border: 0.5px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    appearance: none;
+    background: url(../images/p_images/select_arr.png) right center no-repeat;
+}
+
+.plan form li:nth-child(1) select{
+    width: 211px;
+}
+
+.plan form li:nth-child(2) select{
+    width: 83px;
+}
+
+.plan form .plan-search{
+    background: url(../images/p_images/ic_d_sch.png) 75px center no-repeat ;
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+    background-color: #ee5d01;
+    position: absolute;
+    bottom: 0;
+}
+
+.plan-search a{
+    display: block;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
 }
 
 .c1 .c1-left {
     width: 308px;
     padding: 25px 0 19px 0;
-    background-color: indigo;
+    background-color:  #FD7B28;
 }
 
 .c1 .c1-left .plan {
     height: 212px;
     margin-right: 25px;
-    background-color: midnightblue;
+    color: white;
+    border-radius: 5px;
+    position: relative;
 }
 
 .c1 .c1-left .academy {
     height: 188px;
     margin: 22px 25px 0 0;
-    background-color: navajowhite;
+    background: url(../images/p_images/main_bg_location.png) #eff0f3 115% -20px no-repeat;
+}
+
+.academy h2{
+    padding: 28px 0 18px 0;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+
+.academy .academy-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.academy .academy-list li{
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    position: relative;
+}
+
+.academy .academy-list li a{
+    color: #333;
+    letter-spacing: 0;
+    font-size: 15px;
+}
+
+.academy .academy-list li::after{
+    display: none;
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 0;
+    width: 65px;
+    height: 65px;
+    z-index: 10;
+    background: url(../images/s_images/loca_bullet.png) #FD7B28 center 16px no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(248, 113, 27, 30%);
+    transition:  all 0.3s;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.academy .academy-list li:nth-child(1)::after{
+    content: "COS";
+}
+
+.academy .academy-list li:nth-child(2)::after{
+    content: "MOS";
+}
+
+.academy .academy-list li:nth-child(3)::after{
+    content: "COS Pro";
+}
+
+
+.academy .academy-list li:hover::after{
+    display: block;
 }
 
 .c1 .c1-mid {
